@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "192023454791",
+    "firebase_url": "https://fir-auth-79ef2.firebaseio.com",
+    "project_id": "fir-auth-79ef2",
+    "storage_bucket": "fir-auth-79ef2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192023454791:android:f76e1fee7e29bb26cb3d62",
+        "android_client_info": {
+          "package_name": "com.example.flutteruipractise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192023454791-c8ccahikvcu2lne2rua46sduh1tibjtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnFAJTGu9chPom753G3Eg5DGRgby_nYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192023454791-c8ccahikvcu2lne2rua46sduh1tibjtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192023454791:android:99eee726e9d0e361cb3d62",
+        "android_client_info": {
+          "package_name": "jaimit.myapp.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192023454791-c8ccahikvcu2lne2rua46sduh1tibjtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChnFAJTGu9chPom753G3Eg5DGRgby_nYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192023454791-c8ccahikvcu2lne2rua46sduh1tibjtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

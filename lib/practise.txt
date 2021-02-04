@@ -1,0 +1,123 @@
+ListView(
+              children: snapshot.data.documents.map((document) {
+                return Container(
+                  // color: Colors.grey[100],
+                  padding: EdgeInsets.only(
+                    bottom: 10,
+                    left: 3,
+                    right: 3,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    border: Border.all(
+                        color: Colors.black,
+                        width: 0.6,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(14),
+                      topRight: Radius.circular(14),
+                      bottomLeft: Radius.circular(14),
+                      bottomRight: Radius.circular(14),
+                    ),
+                    // color: Colors.grey[200],
+                  ),
+
+                  margin: EdgeInsets.only(top: 5, left: 5, right: 5),
+                  // margin: EdgeInsets.only(top: 2),
+                  // color: Colors.blue,
+                  // width: MediaQuery.of(context).size.width,
+                  // height: 90,
+                  // child: Center(
+                  //   child: Text(document['Caption']),
+                  // ),
+
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(top: 3, left: 1, right: 1),
+                        // color: Colors.grey[100],
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(5),
+                            topRight: Radius.circular(5),
+                          ),
+                          // color: Colors.grey[200],
+                        ),
+
+                        height: 60,
+                        width: MediaQuery.of(context).size.width,
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: EdgeInsets.only(left: 10),
+                              child: Text(
+                                document['Name'],
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 8, right: 8),
+                        height: 300,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(document['imgUrl']),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Row(
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.all(5),
+                                margin: EdgeInsets.only(top: 10),
+                                child: Icon(
+
+                                    // Icons.favorite_outline
+                                    document['likes']
+                                        ? Icons.favorite_rounded
+                                        : Icons.favorite_outline,
+                                    size: 30,
+                                    color: Colors.red),
+                              ),
+                            ),
+                            Container(
+                              width: 300,
+                              padding: EdgeInsets.only(
+                                  left: 10, top: 10, bottom: 5, right: 10),
+                              child: Text(
+                                document['Caption'],
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            );
+
+
+
+            //code for stream builder.
+
+            //jannavi updated
