@@ -4,6 +4,7 @@ import 'package:flutteruipractise/second.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:email_validator/email_validator.dart';
+import 'package:flutteruipractise/showlist.dart';
 
 class register extends StatefulWidget {
   @override
@@ -250,7 +251,7 @@ class _registerState extends State<register> {
       });
 
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (context) => second()));
+          .pushReplacement(MaterialPageRoute(builder: (context) => showList()));
     } else {
       print("User not registered");
     }

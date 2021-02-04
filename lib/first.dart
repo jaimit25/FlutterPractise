@@ -124,7 +124,7 @@ class _firstState extends State<first> {
                             'XXXXXXXXXXXXX XXXXxxxxxxxxxxxxxxSuccccccesfull xxxxxxxxxxxxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXX');
                         print('you clicked login button');
                         Navigator.of(context).pop();
-                        Navigator.of(context).pushNamed('/homepage');
+                        Navigator.of(context).pushNamed('/show');
                       });
 
                       // Navigator.push(context,
