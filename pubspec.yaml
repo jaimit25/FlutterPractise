@@ -61,6 +61,7 @@ dependencies:
   firestore_ui:
   flutter_speed_dial: ^1.2.5
   flutter_spinkit: ^4.1.2+1
+  liquid_swipe: ^1.5.0
 
 
 dev_dependencies:
