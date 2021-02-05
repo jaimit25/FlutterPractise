@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutteruipractise/bottom_sheet.dart';
 import 'package:flutteruipractise/register.dart';
 import 'package:flutteruipractise/second.dart';
 import 'package:flutteruipractise/showlist.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: first(),
+      home: bottom_sheet(),
       routes: <String, WidgetBuilder>{
         '/landingpage': (BuildContext context) => new MyApp(),
         '/loginpage': (BuildContext context) => new first(),

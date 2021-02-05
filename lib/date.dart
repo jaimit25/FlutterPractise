@@ -21,7 +21,7 @@ class _dateState extends State<date> {
 
 final pages = [
   Container(
-    color: Colors.pink,
+    color: Colors.tealAccent,
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
