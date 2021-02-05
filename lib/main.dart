@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: bottom_sheet(),
+      home: first(),
       routes: <String, WidgetBuilder>{
         '/landingpage': (BuildContext context) => new MyApp(),
         '/loginpage': (BuildContext context) => new first(),
